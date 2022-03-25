@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				background: url('../Exercicio/images/zigzag.png') center top repeat #EEEEEE;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			section {
+				background: rgba(255, 255, 255, 0.95);
+			}
+
+			header {
+				background-color: #101010;
+				padding: 30px;
+				text-align: center;
+				font-size: 30px;
+				color: white;
+			}
+
+			h2 {
+				margin-block-start: 0.83em;
+				margin-block-end: 0.83em;
+			}
+
+			nav {
+				float: left;
+				width: 30%;
+				padding: 20px;
+			}
+
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+			}
+
+			article {
+				float: left;
+				padding: 20px;
+				width: 70%;
+				background-color: #f5f6f7;
+			}
+
+			section::after {
+				background: #ccc;
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			footer {
+				background-color: #101010;
+				padding: 20px;
+				text-align: center;
+				color: white;
+			}
+
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			}
+
+			}
+
+			.botao {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: 700;
+				padding: 10px;
+				cursor: pointer;
+				border-radius: 15px;
+				margin: 5px;
+				width: 100%;
+			  }
+			  
+			  .botao-blue {
+				background-color: #f5f6f7;
+				color: rgb(0, 0, 0);
+				box-shadow: 0 5px 0 #575757;
+			  }
+
+			  .botao-blue:hover {
+				background-color: #575757;
+				color: rgb(255, 255, 255);
+				box-shadow: 0 5px 0 #000000;
+			  }
+
+			  .botao-blue:active {
+				position: relative;
+				top: 5px;
+				box-shadow: none;
+			  }
+
+			  img {
+				  border-radius: 50%;
+			  }
+
+			@media (min-width: 769px) {
+				body {
+					background-color: #000000;
+				}
+			}
+			
+			@media (max-width: 768px) {
+				nav{
+					width: 30vw;
+				}
+				article{
+					width: 70vw;
+				}
+				.coluna{
+					width: 50vw;
+					min-width: unset;
+				}
+			
+			@media (max-width: 425px) {
+				nav,
+				article,
+				.coluna{
+					width: 100%;
+					min-width: 320px;
+				}
+			}
+
+			}
+
+			</style>
+	</head>
+	<body>
+		<header>
+			<div id="html-js-css">
+				<img src="../Exercicio/images/html-css-js.png" alt="html-js-css" width=100 height=50>
+			<h2>Quem Somos</h2>
+		</header>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="02-fale_conosco.html"><button class="botao botao-blue">Fale Conosco</button></a></li>
+					<li><a href="03-venham_nos_conhecer.html"><button class="botao botao-blue">Venham nos Conhecer</button ></a></li>
+					<li><a href="04-tabela_de_vendas.html"><button class="botao botao-blue">Tabela de Vendas</button></a></li>
+					<li><a href="05-vendas_internacionais.html"><button class="botao botao-blue">Tabela de Vendas Globais</button></a></li>
+					<li><a href="06-portfolio.html"><button class="botao botao-blue">Nosso Portfólio</button></a></li>
+				</ul>
+			</nav>
+			<article>
+				<h1>Um pouco sobre nós</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id nibh posuere, eleifend lacus quis, blandit mauris. Proin eu gravida justo. Donec a mi laoreet, malesuada est a, imperdiet leo. Fusce in mauris dapibus, cursus purus vitae, pulvinar ligula. Donec nec mi mollis, viverra purus et, faucibus ante. Fusce faucibus pretium eros, vitae condimentum orci dapibus eu. Morbi elit nibh, pulvinar ut laoreet sit amet, dignissim id lectus. Nunc ac felis posuere, interdum eros vitae, sodales eros. Aenean porta vehicula diam, sit amet venenatis ante eleifend in. Integer malesuada urna nunc, dapibus dapibus felis malesuada et. Ut id tempor dolor, ac imperdiet lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus quam, mollis in tellus quis, blandit venenatis nunc.</p>
+
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sit amet ullamcorper odio. Etiam dignissim arcu vel porta dictum. Proin vel maximus justo, quis rutrum lectus. Nullam pellentesque id enim quis imperdiet. Aenean condimentum ultricies ex vitae auctor. Proin condimentum congue felis, nec aliquet erat tempus ut. Phasellus quis molestie nulla, tincidunt finibus tortor. Aliquam nulla erat, tristique at pharetra eget, vestibulum a diam. Maecenas aliquet porta elit et pretium. In sed ante nibh. Nulla facilisi. Curabitur finibus gravida lacus, eu vestibulum ex. Morbi nec suscipit felis.</p>
+
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti impedit magnam velit. Odio facilis ipsum provident nam consectetur? Officia nihil magnam nobis repellendus corporis vero blanditiis odio eum? Aut, est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aut porro velit amet fuga molestiae necessitatibus, vitae quas accusantium vel numquam temporibus dolor recusandae iure repellat, veniam optio fugit quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel, ab non nemo tempora beatae sequi quia aut temporibus? Facilis ex adipisci quis unde illo cum ducimus quas id ipsum!</p>
+				
+			</article>
+		</section>
+		<footer>
+			<p>Desenvolvido por Alexandre</p>
+		</footer>
+	</body>
+</html>

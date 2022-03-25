@@ -1,0 +1,187 @@
+@import url('tabelas.css');
+
+html {
+	font-family: sans-serif;
+	color: #333333;
+}
+
+img {
+	border-radius: 50%;
+}
+
+p {
+	color: #ffffff;
+}
+
+header p {
+	color: rgb(255, 255, 255);
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+header h2 {
+	font-weight: 300;
+}
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	color: white;
+}
+
+h2 ~ h5 {
+	font-size: 1.5rem;
+}
+
+div ~ p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 1.5rem;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: #f00;
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: #009;
+	background: #eee;
+}
+
+h2:hover {
+	color: #888;
+}
+
+h1, h2, h3 {
+	font-weight: 600;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.8rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+	font: bold 2.2rem/2 sans-serif;
+}
+
+body {
+	background: url('../images/zigzag.png') center top repeat #EEEEEE;
+	background-color: white;
+}
+
+section {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+p {
+	color: rgb(0, 0, 0);
+}
+
+header, footer {
+	background-color: #101010;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.5rem;
+}
+
+.navegacao li a:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #000000;
+}
+
+.botao {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 15px;
+	margin: 5px;
+	width: 100%;
+}
+  
+.botao-blue {
+	background-color: #f5f6f7;
+	color: rgb(0, 0, 0);
+	box-shadow: 0 5px 0 #575757;
+}
+
+.botao-blue:hover {
+	background-color: #575757;
+	color: rgb(255, 255, 255);
+	box-shadow: 0 5px 0 #000000;
+}
+
+.botao-blue:active {
+	position: relative;
+	top: 5px;
+	box-shadow: none;
+}
+
+@media (min-width: 769px) {
+	body {
+		background-color: #000000;
+	}
+}
+
+@media (max-width: 768px) {
+	nav{
+		width: 30vw;
+	}
+	article{
+		width: 70vw;
+	}
+	.coluna{
+		width: 50vw;
+		min-width: unset;
+	}
+
+@media (max-width: 425px) {
+	nav,
+	article,
+	.coluna{
+		width: 100%;
+		min-width: 320px;
+	}
+}
+
+}
