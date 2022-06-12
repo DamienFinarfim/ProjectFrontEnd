@@ -1,3 +1,11 @@
-## Projeto_Front-End
+### Projetode Front End
 
-#### Desenvolvendo um progeto em HTML e CSS para aprimorar e aperfeiçoar meus conhecimentos e por em prática todo aprendizado adquirido.
+#### Foi desenvolvido um projeto de site utilizando o JavaScript.
+
+#### O projeto possui 6 páginas.
+##### *Quem somos
+##### *Fale conosco
+##### *Venham nos conhecer
+##### *Tabela de vendas
+##### *Vendas internacionais
+##### *Portifolio
